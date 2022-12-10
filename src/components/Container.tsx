@@ -1,10 +1,12 @@
 import React from 'react'
 
+type ContainerProps = {
+  styles: React.CSSProperties
+}
 
-
-function Container() {
+function Container(props: ContainerProps) {
   return (
-    <div>Container</div>
+    <div style={props.styles}>Text content</div>
   )
 }
 

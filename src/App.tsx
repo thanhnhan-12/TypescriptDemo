@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Button from './components/Button';
+import Container from './components/Container';
 import Greet from './components/Greet';
 import Heading from './components/Heading';
 import Input from './components/Input';
@@ -42,6 +43,8 @@ function App() {
       }} />
 
       <Input value='' handleChange={event => console.log(event)} />
+
+      <Container styles={{border: "1px solid #000", padding: "1rem" }} />
     </div>
   );
 }
